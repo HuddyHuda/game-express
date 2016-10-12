@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quiz </title>
+
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,600" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Crete+Round:400,400italic" rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,400italic,600" rel="stylesheet" type="text/css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+
+</head>
+
+<body>
+
+    <header class="canyouguess-header">
+
+        <div class="introtitle center">
+            <h1 class="intro wow slideInLeft" data-wow-duration="0.5" data-wow-delay="0.5s"> <p>Can <b>you</b> guess the song name?</p>  </h1>
+            <h1 class="desc wow fadeInUp" data-wow-duration="0.5" data-wow-delay="2s"><p>I'm sure you can, let's give a shot!</p></h1>
+        </div>
+
+
+
+    </header>
+
+
+    <div class="container-instruction-details wow fadeInUp" data-wow-duration="0.5" data-wow-delay="3.5s">
+        <h1> INSTRUCTIONS </h1>
+        <p>The game is pretty straightforward. You need to guess the song title of the music that is playing in the background. You have 3 tries, if not you need to restart again. Once you get the song title correct, you will move on to listen and guess the next song.</p>
+
+        <button id="startBtn">Start</button>
+    </div>
+    <!--endofcontainerinstruction-->
+
+
+
+    <div class="container musicquestions1 wow fadeInUp" data-wow-duration="0.5" data-wow-delay="0.2s">
+
+        <div class="container-content">
+
+
+            <audio id="audio1" src="songs/johnlegend-everybodyknows.mp3"></audio>
+
+
+            <div class="holder">
+
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="modalclose">x</span>
+                        <h2>That's Wrong!</h2>
+                        <p>No worries, try again!</p>
+                    </div>
+
+                </div>
+                <!--endofmyModal-->
+
+
+                <div class="hint-singerjohn wow flash" data-wow-duration="0.5" data-wow-delay="0.2s">
+                    <img src="images/johnlegend.jpg">
+                    <h1><span class="hint">Hint:</span>John Legend </h1>
+
+                    <guess id="guess">You only have <span class="num">3</span> tries left!</guess>
+
+                </div>
+                <!--endofhintsinger-->
+
+                <h2 id="askQuestion" class="center">What is this song currently playing?</h2>
+
+                <label>1.</label>
+                <input type="text" placeholder="What is the song name?">
+                <button id="submitBtn">Submit</button>
+
+
+
+                <div class="yay-goodjob wow bounceIn" data-wow-duration="0.5" data-wow-delay="1s">
+                    <h1> Great job! On to the next! </h1>
+                </div>
+                <!--endofyaygoodjob-->
+
+
+
+            </div>
+            <!--endofholder-->
+        </div>
+        <!--endofcontainercontent-->
+
+
+    </div>
+    <!--endofmusiccontainer-->
+
+
+    <div class="container musicquestions2 wow fadeInUp" data-wow-duration="0.5" data-wow-delay="0.2s">
+
+        <div class="container-content2">
+
+
+            <audio id="audio2" src="songs/wedonttalkanymore.mp3"></audio>
+
+
+            <div class="holder">
+
+                <div id="myModal2" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content2">
+                        <span class="modalclose2">x</span>
+                        <h2>That's Wrong!</h2>
+                        <p>No worries, try again!</p>
+                    </div>
+
+                </div>
+                <!--endofmyModal-->
+
+
+                <div class="hint-singercharlie wow flash" data-wow-duration="0.5" data-wow-delay="0.2s">
+                    <img src="images/charlie.jpg">
+                    <h1><span class="hint">Hint:</span>Charlie Puth </h1>
+
+                    <guess id="guess2">You only have <span class="num2">3</span> tries left!</guess>
+
+                </div>
+                <!--endofhintsinger-->
+
+                <h2 id="askQuestion" class="center">What is this song currently playing?</h2>
+
+                <label>2.</label>
+                <input class="input2" type="text" placeholder="What is the song name?">
+                <button id="submitBtn2">Submit</button>
+
+
+
+                <div class="yay-goodjob2 wow bounceIn" data-wow-duration="0.5" data-wow-delay="1s">
+                    <h1> Great job! On to the next! </h1>
+                </div>
+                <!--endofyaygoodjob-->
+
+
+
+            </div>
+            <!--endofholder-->
+        </div>
+        <!--endofcontainercontent-->
+
+
+    </div>
+    <!--endofmusiccontainer2-->
+
+    <div class="container musicquestions3 wow fadeInUp" data-wow-duration="0.5" data-wow-delay="0.2s">
+
+        <div class="container-content3">
+
+
+            <audio id="audio3" src="songs/diamonds.mp3"></audio>
+
+
+            <div class="holder">
+
+                <div id="myModal3" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content3">
+                        <span class="modalclose3">x</span>
+                        <h2>That's Wrong!</h2>
+                        <p>No worries, try again!</p>
+                    </div>
+
+                </div>
+                <!--endofmyModal-->
+
+
+                <div class="hint-singerrihanna wow flash" data-wow-duration="0.5" data-wow-delay="0.2s">
+                    <img src="images/rihanna.jpg">
+                    <h1><span class="hint">Hint:</span>Rihanna </h1>
+
+                    <guess id="guess3">You only have <span class="num3">3</span> tries left!</guess>
+
+                </div>
+                <!--endofhintsinger-->
+
+                <h2 id="askQuestion" class="center">What is this song currently playing?</h2>
+
+                <label>3.</label>
+                <input class="input3" type="text" placeholder="What is the song name?">
+                <button id="submitBtn3">Submit</button>
+
+
+
+                <div class="yay-goodjob3 wow bounceIn" data-wow-duration="0.5" data-wow-delay="1s">
+                    <h1> Congrats, you answered everything correctly eventually :) </h1>
+                </div>
+                <!--endofyaygoodjob-->
+
+
+
+            </div>
+            <!--endofholder-->
+        </div>
+        <!--endofcontainercontent-->
+
+
+    </div>
+    <!--endofmusiccontainer3-->
+
+    <div class="thankyou wow fadeInUp" data-wow-duration="0.5" data-wow-delay="1s">
+      <h1>THANK YOU </h1>
+      <p>Hope you enjoyed the short guessing game! </p>
+      <br/>
+      <div class="restart-game">
+      <span class="glyphicon glyphicon-refresh"> <h5>Play again</h5></span>
+    </div>
+    </div>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+
+</body>
+
+</html>
